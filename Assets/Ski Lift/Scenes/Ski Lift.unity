@@ -592,10 +592,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 587095519}
     - target: {fileID: 4181548494289278233, guid: 2e80a43836b73064c8ca3b8b92e94b97, type: 3}
-      propertyPath: radius1
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4181548494289278233, guid: 2e80a43836b73064c8ca3b8b92e94b97, type: 3}
       propertyPath: offset.x
       value: 10
       objectReference: {fileID: 0}

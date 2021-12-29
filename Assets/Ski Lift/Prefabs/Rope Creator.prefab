@@ -48,11 +48,12 @@ MonoBehaviour:
   ropeNode: {fileID: 7752680544335720103, guid: ae0f034239629fd44adef2e722de5a54, type: 3}
   numOfNodes: 50
   isCircle: 1
-  radius1: 5
+  radius1: 10
   nodes: []
   nodesParts: []
   center: {fileID: 9031745640353908932}
   centerCollider: {fileID: 8842171282650774830}
+  groundPlane: {fileID: 0}
 --- !u!114 &9031745640353908932
 MonoBehaviour:
   m_ObjectHideFlags: 0

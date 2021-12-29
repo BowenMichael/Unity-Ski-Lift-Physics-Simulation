@@ -129,7 +129,9 @@ public class CollisionFunctions : MonoBehaviour
 
     public static void sphereCylyinderHandler(SphereCollider s, SphereCollider c)
     {
-        Vector3 diff = s.transform.position - new Vector3(c.transform.position.x, s.transform.position.y, c.transform.position.z);
+        Vector3 sPosInC = c.transform.InverseTransformPoint( s.transform.position);
+        Vector3 diff = sPosInC - new Vector3(0.0f, sPosInC.y,0.0f );
+        diff = c.transform.TransformDirection(diff);
         float penatration = (s.radius * s.transform.localScale.y + c.radius) - diff.magnitude;
         if (s.TryGetComponent(out Particle3D s1Part) && c.TryGetComponent(out Particle3D s2Part))
         {

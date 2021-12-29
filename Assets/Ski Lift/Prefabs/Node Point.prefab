@@ -114,7 +114,7 @@ MonoBehaviour:
   scalar: 1
   velocity: {x: 0, y: 0, z: 0}
   acceleration: {x: 0, y: 0, z: 0}
-  gavitaionalAcceleration: {x: 0, y: -1, z: 0}
+  gavitaionalAcceleration: {x: 0, y: -0.1, z: 0}
   dampingConstant: 0.9
   mass: 1
   isProjectile: 1
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   springConstant: 5
   dampingConstant: 0
-  restLength: 0.7957747
+  restLength: 0.031157805
   other: []
   springs: []
   springVisual: {fileID: 6152257025536756068, guid: 4facbd2a270a478458d6666115ee7daa, type: 3}

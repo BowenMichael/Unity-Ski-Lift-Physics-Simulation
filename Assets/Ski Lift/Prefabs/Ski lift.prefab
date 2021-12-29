@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9090321190416241167}
+  - component: {fileID: 6655242802715865355}
   m_Layer: 0
   m_Name: Ski lift
   m_TagString: Untagged
@@ -34,6 +35,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6655242802715865355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5399749281226571994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 835f95fb05cbb184e8ffd60f53d52925, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  poles:
+  - {fileID: 6717744339945634179}
+  - {fileID: 9146410598779995033}
+  - {fileID: 6244652105937072016}
+  basePole: {fileID: 6717744339945634179}
+  topPole: {fileID: 6244652105937072016}
+  rope: {fileID: 0}
 --- !u!1 &8950514406179715746
 GameObject:
   m_ObjectHideFlags: 0
@@ -116,6 +136,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3358625819457578200, guid: ae0f034239629fd44adef2e722de5a54, type: 3}
+      propertyPath: restLength
+      value: 0.7957747
+      objectReference: {fileID: 0}
     - target: {fileID: 7752680544335720103, guid: ae0f034239629fd44adef2e722de5a54, type: 3}
       propertyPath: m_Name
       value: RopePoint
@@ -184,6 +208,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f143935b9ee9f5144b630c2f272226da, type: 3}
+--- !u!1 &9146410598779995033 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3973007093925826856, guid: f143935b9ee9f5144b630c2f272226da, type: 3}
+  m_PrefabInstance: {fileID: 5317738631008883377}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6826120814937533517 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1690863801532448508, guid: f143935b9ee9f5144b630c2f272226da, type: 3}
@@ -250,6 +279,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f143935b9ee9f5144b630c2f272226da, type: 3}
+--- !u!1 &6244652105937072016 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3973007093925826856, guid: f143935b9ee9f5144b630c2f272226da, type: 3}
+  m_PrefabInstance: {fileID: 7028855575643979448}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8573909540437753924 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1690863801532448508, guid: f143935b9ee9f5144b630c2f272226da, type: 3}
@@ -316,6 +350,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f143935b9ee9f5144b630c2f272226da, type: 3}
+--- !u!1 &6717744339945634179 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3973007093925826856, guid: f143935b9ee9f5144b630c2f272226da, type: 3}
+  m_PrefabInstance: {fileID: 7645084687057545387}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &9038702115152696919 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1690863801532448508, guid: f143935b9ee9f5144b630c2f272226da, type: 3}

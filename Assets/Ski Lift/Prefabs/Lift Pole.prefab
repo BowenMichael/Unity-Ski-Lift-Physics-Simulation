@@ -107,6 +107,8 @@ GameObject:
   - component: {fileID: 1558564302453479618}
   - component: {fileID: 5096174982320304784}
   - component: {fileID: 8475024563612363570}
+  - component: {fileID: 8779564381406682416}
+  - component: {fileID: 1762733797744312492}
   m_Layer: 0
   m_Name: Lift Wheels
   m_TagString: Untagged
@@ -123,7 +125,7 @@ Transform:
   m_GameObject: {fileID: 3671131525900118951}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -0, y: 2, z: 0}
-  m_LocalScale: {x: 0.1, y: 3, z: 0.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1690863801532448508}
   m_RootOrder: 0
@@ -186,10 +188,43 @@ BoxCollider:
   m_GameObject: {fileID: 3671131525900118951}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!135 &8779564381406682416
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3671131525900118951}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1762733797744312492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3671131525900118951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51fd9d2e56dfdbb46838e80cae4e4868, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scalar: 1
+  velocity: {x: 0, y: 0, z: 0}
+  acceleration: {x: 0, y: 0, z: 0}
+  gavitaionalAcceleration: {x: 0, y: 0, z: 0}
+  dampingConstant: 0
+  mass: 0
+  isProjectile: 1
+  type: 0
 --- !u!1 &3973007093925826856
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,6 +234,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1690863801532448508}
+  - component: {fileID: 2822162291748887843}
+  - component: {fileID: -2608838158419990403}
+  - component: {fileID: 8529043756820824788}
   m_Layer: 0
   m_Name: Lift Pole
   m_TagString: Untagged
@@ -222,3 +260,49 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &2822162291748887843
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3973007093925826856}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-2608838158419990403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3973007093925826856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51fd9d2e56dfdbb46838e80cae4e4868, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scalar: 1
+  velocity: {x: 0, y: 0, z: 0}
+  acceleration: {x: 0, y: 0, z: 0}
+  gavitaionalAcceleration: {x: 0, y: 0, z: 0}
+  dampingConstant: 0
+  mass: 0
+  isProjectile: 1
+  type: 0
+--- !u!114 &8529043756820824788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3973007093925826856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f70368b81f8af024eab62db4b4335839, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Wheels: {fileID: 3671131525900118951}
