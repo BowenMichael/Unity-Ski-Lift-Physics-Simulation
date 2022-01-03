@@ -54,6 +54,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\PathCreator\Examples\Scripts\PathSpawner.cs" />
+    <Compile Include="Assets\LiftManager.cs" />
     <Compile Include="Assets\PathCreator\Examples\Scripts\GeneratePathExample.cs" />
     <Compile Include="Assets\Scripts\Physics\Integrator.cs" />
     <Compile Include="Assets\Scripts\Game Managers\PopperController.cs" />
@@ -78,10 +79,10 @@
     <Compile Include="Assets\Ski Lift\Scripts\RopeCreator.cs" />
     <Compile Include="Assets\PlayerController.cs" />
     <Compile Include="Assets\PathCreator\Examples\Scripts\RoadMeshCreator.cs" />
+    <Compile Include="Assets\PoleManager.cs" />
     <Compile Include="Assets\Scripts\Physics\Forces\Boyancy.cs" />
     <Compile Include="Assets\Scripts\Game Managers\deleteOffScreen.cs" />
-    <Compile Include="Assets\LiftManager.cs" />
-    <Compile Include="Assets\PoleManager.cs" />
+    <Compile Include="Assets\Ski Lift\Scripts\SkiLiftManagerEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\NewAssemblyReference.asmref" />

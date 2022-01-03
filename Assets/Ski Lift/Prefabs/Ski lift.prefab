@@ -53,6 +53,7 @@ MonoBehaviour:
   - {fileID: 6244652105937072016}
   basePole: {fileID: 6717744339945634179}
   topPole: {fileID: 6244652105937072016}
+  polePrefab: {fileID: 3973007093925826856, guid: f143935b9ee9f5144b630c2f272226da, type: 3}
   rope: {fileID: 0}
 --- !u!1 &8950514406179715746
 GameObject:
